@@ -1,10 +1,7 @@
   
-const todos = require("../db/db");
+const todos = require("../db/dbNotes");
 
 class Todo {
-
-    // baseUrl = "https://jsonplaceholder.typicode.com/todos";
-    // update
 
     update({ id, ...payload }) {
         let index;

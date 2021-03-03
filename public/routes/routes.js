@@ -1,8 +1,7 @@
 const router = require("express").Router();
-// const todoController = require("./controllers/todos.controller");
-const todoController = require("./controllers/todoController.controller");
+const todoController = require("../../controllers/todoController.controller");
 
-
+// Handles Get Requests
 
 router.get("/", async (req, res) => {
     try {
@@ -26,6 +25,9 @@ router.get("/:id", async (req, res) => {
     }
 });
 
+
+// Handles Put Requests
+
 router.put("/:id", async (req, res) => {
     try {
         const update = req.body;
@@ -39,6 +41,8 @@ router.put("/:id", async (req, res) => {
     }
 });
 
+// Handles Post Requests
+
 router.post("/", async (req, res) => {
 
     try {
@@ -50,6 +54,8 @@ router.post("/", async (req, res) => {
         res.status(500).end();
     }
 });
+
+// Handles Delete Request
 
 router.delete("/:id", async (req, res) => {
     try {

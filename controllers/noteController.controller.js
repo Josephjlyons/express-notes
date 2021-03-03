@@ -1,49 +1,49 @@
   
-const todos = require("../db/dbNotes");
+const notes = require("../db/dbNotes");
 
-class Todo {
+class Note {
 
     update({ id, ...payload }) {
         let index;
-        let update = todos.find((todo, i) => {
+        let update = notes.find((note, i) => {
             index = i;
-            todo.id === id
+            note.id === id
         });
         update = {
             id: id,
             ...payload
         };
-        return todos;
+        return notes;
     }
 
     // create
 
     create(payload) {
-        todos.push(payload);
-        return todos;
+        notes.push(payload);
+        return notes;
     }
 
     // delete
 
     remove(id) {
         let index;
-        const todo = todos.find((t, i) => {
+        const note = notes.find((t, i) => {
             index = i;
             t.id === id
         });
-        todos.splice(index, 1);
+        notes.splice(index, 1);
     }
 
     // read
 
     read(id) {
-        return todos.find((t) => t.id === id);
+        return notes.find((t) => t.id === id);
     }
 
     list() {
-        return todos;
+        return notes;
     }
 
 }
 
-module.exports = new Todo();
+module.exports = new Note();

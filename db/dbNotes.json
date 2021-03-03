@@ -1,23 +1,8 @@
 [
     {
-        "id": "f71fe7a2-7ae2-11eb-9439-0242ac130002",
-        "todo": "Be Nice to Patrick",
-        "completed": false
-    },
-
-    {
-        "id": "1",
-        "todo": "Complete Homework",
-        "completed": false
-    },
-    
-    {
-        "id": "2",
-        "todo": "Take a Nap",
-        "completed": false
+        "title": "Test Title",
+        "text": "Text Test"
     }
-
-    
 ]
 
 

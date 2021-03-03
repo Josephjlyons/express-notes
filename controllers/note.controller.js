@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-class Todo {
+class Note {
 
     baseUrl = "https://jsonplaceholder.typicode.com/todos";
     // update
@@ -33,4 +33,4 @@ class Todo {
 
 }
 
-module.exports = new Todo();
+module.exports = new Note();

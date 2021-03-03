@@ -1,13 +1,13 @@
 const router = require("express").Router();
-const todoController = require("../../controllers/todoController.controller");
+const todoController = require("../../controllers/noteController.controller");
 
 // Handles Get Requests
 
 router.get("/", async (req, res) => {
     try {
 
-        const todos = await todoController.list();
-        res.send(todos);
+        const notes = await todoController.list();
+        res.send(notes);
 
     } catch (err) {
         res.status(500).end();
@@ -60,8 +60,8 @@ router.post("/", async (req, res) => {
 router.delete("/:id", async (req, res) => {
     try {
         const { id } = req.params;
-        const todos = await todoController.remove(id);
-        res.send(todos);
+        const notes = await todoController.remove(id);
+        res.send(notes);
 
     } catch (err) {
         res.status(500).end();

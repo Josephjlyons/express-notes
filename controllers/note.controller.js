@@ -2,7 +2,7 @@ const axios = require("axios");
 
 class Note {
 
-    baseUrl = "https://jsonplaceholder.typicode.com/todos";
+    baseUrl = "http://localhost:3001/notes";
     // update
 
     update({ id, ...payload }) {

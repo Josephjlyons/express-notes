@@ -1,10 +1,9 @@
 const express = require('express');
-const routes = require('./public/routes/indexRoute');
+const apiRoutes = require('./routes/apiRoutes');
 // const uuid = require('uuid');
-// const fs = require('fs');
-// const path = require('path');   will use some of these I think at some point...maybe...
-// const axios = require('axios');
-const htmlRoutes = require('./public/routes/htmlRoutes');
+const path = require('path');   
+const axios = require('axios');
+const htmlRoutes = require('./routes/htmlRoutes');
 
 
 
@@ -17,9 +16,9 @@ app.use(express.json());
 
 // Set Static Folder
 
+app.use("/", apiRoutes); // make a new route if needed to fit file structure?
 app.use(express.static('public'));
-app.use("/api/notes", routes); // make a new route if needed to fit file structure
-app.use('/', routes);
+app.use('/', htmlRoutes);
 
 
 app.listen(PORT, () => {

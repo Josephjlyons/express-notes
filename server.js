@@ -1,5 +1,5 @@
 const express = require('express');
-const routes = require('./public/routes');
+const routes = require('./public/routes/indexRoute');
 // const uuid = require('uuid');
 // const fs = require('fs');
 // const path = require('path');   will use some of these I think at some point...maybe...

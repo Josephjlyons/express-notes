@@ -8,7 +8,7 @@ html, body {
   }
   .save-note {
     color:white;
-    /* display: none; */
+    display: none;
   }
   
   .icons i {

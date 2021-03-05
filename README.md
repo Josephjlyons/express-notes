@@ -5,13 +5,13 @@
 
 ## Application Video Walkthrough
 
+[Video Demo](https://drive.google.com/file/d/1vzpXXboyhXkbzNQDXyvnD_vBApalJ9j2/view?usp=sharing)
+
 ## Deployed Link
 
 ## Table of Contents
 
 * [Purpose](#Purpose)
-
-* [Installation](#Installation)
 
 * [Technologies](#Technologies)
 

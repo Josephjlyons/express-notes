@@ -2,11 +2,34 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    /* background: rgb(45, 193, 243); */
-  }
+    
+      background: linear-gradient(-45deg, #fa0000, #ff0b0b, #ff7878, #fa1f1f);
+      background-size: 400% 400%;
+      animation: gradient 12s ease infinite;
+    }
+    
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  
 .navbar{
-    background-color: black;
+  
+  background: linear-gradient(-45deg, #fa0000, #ff0b0b, #ff7878, #fa1f1f);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
   }
+.navbar .text{
+  color:black;
+}
+
 .jumbotron {
   background: white;
 }

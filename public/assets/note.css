@@ -2,11 +2,18 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    /* background: rgb(45, 193, 243); */
   }
-  .navbar{
+.navbar{
     background-color: black;
   }
-  .save-note {
+.jumbotron {
+  background: white;
+}
+.btn-primary{
+  background: black;
+}
+.save-note {
     color:white;
     display: none;
   }
@@ -20,7 +27,7 @@ html, body {
   .container {
     width: 100%;
     padding-right: 15px;
-    color: rgb(156, 0, 0);
+    color: black;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;

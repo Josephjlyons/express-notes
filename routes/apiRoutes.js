@@ -8,7 +8,7 @@ router.get('/api/notes', (req, res) => {
     fs.readFile('./db/db.json', (err, data) => {
         if (err) throw err;
         const parsedNotes = JSON.parse(data);
-        res.json(parsedNotes).send();
+        res.json(parsedNotes);
     });
 });
 

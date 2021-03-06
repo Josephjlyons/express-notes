@@ -9,6 +9,8 @@
 
 ## Deployed Link
 
+[Live Link](http://morning-cove-82071.herokuapp.com/)
+
 ## Table of Contents
 
 * [Purpose](#Purpose)

@@ -23,7 +23,7 @@
 
 ## Purpose
 
-A simple backend application that generates a formatted HTML page. Complete with cards per each employee role (Manager, Engineer, Intern) and their respective details.
+A backend that uses various technologies that allows the user to create, store and delete notes. An easy and simple UI that allows the user to easily manage notes.
 
 
 
